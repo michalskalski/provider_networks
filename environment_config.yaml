@@ -1,0 +1,13 @@
+attributes:
+  metadata:
+    # Settings group can be one of "general", "security", "compute", "network",
+    # "storage", "logging", "openstack_services" and "other".
+    group: 'other'
+  network_list:
+    value:
+      - 'physnet3,br-intra-ovs,1000:1030'
+    label: 'Provider networks'
+    description: 'Name, bridge, vlan range (optional)'
+    weight: 25
+    min: 1
+    type: "text_list"

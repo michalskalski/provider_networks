@@ -1,0 +1,13 @@
+# These tasks will be merged into deployment graph. Here you
+# can specify new tasks for any roles, even built-in ones.
+
+- id: provider_network_add
+  type: puppet
+  groups: [primary-controller, controller]
+  version: 2.1.0
+  requires: [globals]
+  required_for: [openstack-network-start]
+  parameters:
+    puppet_manifest: puppet/manifests/add_networks_map.pp
+    puppet_modules: puppet/modules:/etc/puppet/modules
+    timeout: 120
