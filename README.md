@@ -1,4 +1,5 @@
-provider-network
+provider-networks
 ============
 
-Plugin description
+Simple Fuel plugin which add possibility to define
+physical network mappings.
