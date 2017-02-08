@@ -3,7 +3,7 @@ name: provider_networks
 # Human-readable name for your plugin
 title: Define additional provider networks mappings
 # Plugin version
-version: '1.0.0'
+version: '1.0.1'
 # Description
 description: Please describe your plugin here
 # Required fuel version
